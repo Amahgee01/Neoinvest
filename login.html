@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <title>Login — NeoInvest</title>
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <h2>Welcome Back</h2>
+    <p>Enter your credentials to access your dashboard.</p>
+    <form onsubmit="
+      alert('Welcome to your NeoInvest dashboard!');
+      window.location.href='dashboard.html';
+      return false;
+    ">
+      <label>Email</label>
+      <input type="email" placeholder="you@investor.com" required />
+      <label>Password</label>
+      <input type="password" placeholder="*********" required />
+      <button type="submit">Log In &rarr;</button>
+      <p style="font-size:small; margin-top:15px; color:#666;">
+        Demo: Use any email/password to continue.
+      </p>
+    </form>
+  </div>
+</body>
+</html>
